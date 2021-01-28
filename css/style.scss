@@ -1,0 +1,80 @@
+$mainLight: #42F6C4;
+$mainDark: #34C29A;
+$compLight: #F54E75;
+html {
+    margin: 0;
+    padding: 0;
+    header {
+        margin: 0;
+        padding-left: 10px;
+        background-color: $mainLight;
+        h1 {
+            filter: drop-shadow(0 0 3px rgba(255, 255, 255, 1));
+            margin: 0;
+            letter-spacing: 3px;
+            font-size: 18pt;
+            color: darkgray;
+            span {
+                font-size: 32pt;
+                color: black;
+            }
+        }
+    }
+    section {
+        margin-top: 5px;
+        canvas {
+            width: 80vw;
+            height: 80vmin;
+            display: block;
+            margin: auto;
+        }
+        .property {
+            margin: auto;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 14pt;
+        }
+        #main {
+            border: thin solid black;
+        }
+        .slider {
+            width: calc(640px - 4em);
+            &.mid {
+                width: calc(320px - 4em);
+            }
+        }
+        .slider_txt {
+            width: 3em;
+        }
+        input[type="number"] {
+            font-size: 14pt;
+        }
+        a.btn {
+            border: $mainDark solid medium;
+            border-radius: 5px;
+            padding: 8px 12px;
+            display: inline-block;
+            margin: 7px 3px;
+            transition: 200ms ease;
+            user-select: none;
+            &:hover {
+                background-color: $mainLight;
+            }
+            &.selected {
+                background-color: $mainDark;
+                color: white;
+            }
+        }
+        #circle {}
+        #sphere {
+            display: none;
+        }
+        #line {
+            display: none;
+        }
+    }
+    .ib {
+        display: inline-block;
+    }
+}

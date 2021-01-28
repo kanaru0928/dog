@@ -1,0 +1,59 @@
+html {
+  margin: 0;
+  padding: 0; }
+  html header {
+    margin: 0;
+    padding-left: 10px;
+    background-color: #42F6C4; }
+    html header h1 {
+      filter: drop-shadow(0 0 3px white);
+      margin: 0;
+      letter-spacing: 3px;
+      font-size: 18pt;
+      color: darkgray; }
+      html header h1 span {
+        font-size: 32pt;
+        color: black; }
+  html section {
+    margin-top: 5px; }
+    html section canvas {
+      width: 80vw;
+      height: 80vmin;
+      display: block;
+      margin: auto; }
+    html section .property {
+      margin: auto; }
+    html section p {
+      margin: 5px 0;
+      font-size: 14pt; }
+    html section #main {
+      border: thin solid black; }
+    html section .slider {
+      width: calc(640px - 4em); }
+      html section .slider.mid {
+        width: calc(320px - 4em); }
+    html section .slider_txt {
+      width: 3em; }
+    html section input[type="number"] {
+      font-size: 14pt; }
+    html section a.btn {
+      border: #34C29A solid medium;
+      border-radius: 5px;
+      padding: 8px 12px;
+      display: inline-block;
+      margin: 7px 3px;
+      transition: 200ms ease;
+      user-select: none; }
+      html section a.btn:hover {
+        background-color: #42F6C4; }
+      html section a.btn.selected {
+        background-color: #34C29A;
+        color: white; }
+    html section #sphere {
+      display: none; }
+    html section #line {
+      display: none; }
+  html .ib {
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
